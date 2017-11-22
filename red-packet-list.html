@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>流量红包查询</title>
+    <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/select.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <script>
+        (function() {
+            var newRem = function() {
+                var html = document.documentElement;
+                html.style.fontSize = html.getBoundingClientRect().width / 10 + 'px';
+            };
+            window.addEventListener('resize', newRem, false);
+            newRem();
+        })();
+    </script>
+</head>
+<body>
+<div class="mainWarrp">
+    <div class="mainTop">
+    </div>
+    <div class="main">
+        <h2 class="itemTitle">批次：</h2>
+        <div class="button custom-select listItem ">
+            <select name="" id="">
+                <option value="">测试一</option>
+                <option value="">测试二</option>
+                <option value="">测试三</option>
+            </select>
+        </div>
+        <div class="itembox">
+            <div class="title">红包信息</div>
+            <div class="ibmain">
+                <table width="100%" class="ibtable">
+                    <thead>
+                        <th>红包</th>
+                        <th>总数</th>
+                        <th>已用</th>
+                        <th>已分享</th>
+                        <th>已收取</th>
+                        <th>未收取</th>
+                        <th>已收取</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>100M</td>
+                            <td>10</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>300M</td>
+                            <td>10</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>500M</td>
+                            <td>10</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1G</td>
+                            <td>10</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+</div>
+</body>
+</html>

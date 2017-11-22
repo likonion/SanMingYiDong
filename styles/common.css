@@ -1,0 +1,282 @@
+
+body {
+    font-size: 37.5px;
+
+    background-color: #a3120f;
+}
+
+.mainWarrp {
+
+}
+
+.mainTop {
+    margin: 0 auto;
+    width: 10rem;
+    height: 6.4rem;
+    background: url(../images/top-bg.jpg) center no-repeat;
+    background-size: contain;
+}
+
+.main {
+    font-size: .32rem;
+    padding: 0 .32rem;
+}
+
+.listItem {
+    width: 100%;
+    overflow: hidden;
+}
+
+.input {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: .08rem;
+    height: 1.02rem;
+    line-height: 1.02rem;
+    text-indent: .3rem;
+    border: none;
+    vertical-align: top;
+}
+
+.itemTitle {
+    font-size: .42rem;
+    color: white;
+    font-weight: normal;
+}
+
+.listItem select {
+    box-sizing: border-box;
+}
+
+.itembox {
+    margin-top: .8rem;
+    position: relative;
+    background-color: white;
+    border-radius: .08rem;
+    border: .05rem solid #f5b230;
+
+}
+
+.itembox .title {
+    width: 3.87rem;
+    height: .88rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.92rem;
+    margin-top: -.43rem;
+    text-align: center;
+    line-height: .88rem;
+    font-style: italic;
+    font-size: .37rem;
+    color: #cd1d15;
+    background: url(../images/title-bg.png) center no-repeat;
+    background-size: contain;
+}
+
+.ibtable {
+
+    border-collapse: collapse;
+    margin-top: .8rem;
+}
+
+.ibtable th {
+
+    font-weight: normal;
+    color: white;
+    background-color: #f5b230;
+    text-align: center;
+    padding: .1rem;
+}
+
+.ibtable td {
+    padding: .2rem .1rem;
+    text-align: center;
+}
+
+.ibtable tbody tr:nth-child(even) {
+    background-color: #f3dcaf;
+}
+
+.selBox {
+    background: #ffffff;
+    margin-top: .5rem;
+    border-radius: .08rem;
+    padding: .32rem;
+}
+
+.selBox h3 {
+    color: #585858;
+    font-weight: normal;
+    font-size: .32rem;
+    padding: 0;
+    margin: .2rem 0 .2rem .25rem;
+}
+
+.selBox a {
+    width: 2.2rem;
+    height: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .04rem;
+    margin: .2rem .2rem;
+    display: inline-block;
+    background: #ffffff;
+    color: #000000;
+    border: .5px solid #c8c1c1;
+}
+
+.selBox .active {
+    border-color: red;
+    color: red;
+    font-weight: bold;
+    background: url(../images/check.png) right bottom no-repeat;
+}
+
+.itemFlex {
+    margin-top: .5rem;
+    display: flex;
+}
+
+.itemFlex > div {
+
+}
+
+.itemFlex > div input {
+    width: 100%;
+}
+
+.itemFlex .ifOne {
+    flex: 1;
+    padding-right: .2rem;
+}
+
+.itemFlex .ifTwo {
+    width: 2.98rem;
+}
+.itemFlex2 {
+    margin: .2rem 0;
+    display: flex;
+}
+.itemFlex2 .inputTitle{
+    width: 2.32rem;
+    height: 1.02rem;
+    line-height: 1.02rem;
+    color: white;
+    font-size: .42rem;
+    text-align: center;
+    border-top-left-radius: .08rem;
+    border-bottom-left-radius: .08rem;
+    background: #f3a94d;
+}
+.itemFlex2 .inputTxt {
+    flex: 1;
+}
+.itemFlex2 .input {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.Btn {
+    width: 2.98rem;
+    height: 1.02rem;
+    line-height: 1.02rem;
+    display: inline-block;
+    text-align: center;
+    font-size: .37rem;
+    vertical-align: top;
+    color: white;
+    text-decoration: none;
+
+}
+.greenBtn {
+    background: url(../images/green-btn.png) no-repeat;
+    background-size: contain;
+
+}
+
+.disableBtn {
+    background: url(../images/disable-btn.png) no-repeat;
+    background-size: contain;
+}
+
+.defaultBtn {
+    margin: 1rem auto;
+    width: 6.78rem;
+    height: 1.17rem;
+    line-height: 1.17rem;
+    font-size: .48rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: url(../images/default-btn.png) center no-repeat;
+    background-size: contain;
+    
+}
+.gpiDisable .defaultBtn {
+    color: rgba(255, 255, 255, 0.41);
+    background: url(../images/default-btn-disable.png) center no-repeat;
+    background-size: contain;
+}
+.residue {
+    margin: .5rem auto 0;
+    width: 6.18rem;
+    height: 1.17rem;
+    line-height: 1.17rem;
+    text-align: center;
+    font-size: .4rem;
+    font-weight: bold;
+    color: #a3120f;
+    background: #f29c42;
+    border-top-left-radius: .08rem;
+    border-top-right-radius: .08rem;
+}
+.gpiDisable .residue {
+    background: rgba(0, 0, 0, 0.24);
+    color: rgba(255, 255, 255, 0.36);
+}
+.popupWindow {
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0px;
+    top:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    font-size: .4rem;
+}
+.popupMain{
+    vertical-align: middle;
+    display: inline-block;
+    z-index: 1;
+    border-radius: .16rem;
+    background: #ffffff;
+}
+.popupMain .title {
+    height: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    border-top-left-radius: .16rem;
+    border-top-right-radius: .16rem;
+    color: white;
+    background: #ed4a41;
+}
+.popupMain .popupTxt {
+    padding: .4rem;
+    color: #615f5f;
+}
+.popupMain .popupBtn {
+    text-align: center;
+    padding: .4rem;
+}
+.popupWindow .mask {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.34);
+}

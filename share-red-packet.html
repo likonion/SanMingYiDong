@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分享流量红包</title>
+    <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/select.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <script>
+        (function () {
+            var newRem = function () {
+                var html = document.documentElement;
+                html.style.fontSize = html.getBoundingClientRect().width / 10 + 'px';
+            };
+            window.addEventListener('resize', newRem, false);
+            newRem();
+        })();
+
+    </script>
+</head>
+<body>
+<div class="mainWarrp">
+    <div class="mainTop">
+    </div>
+    <div class="main">
+        <h2 class="itemTitle">批次：</h2>
+        <div class="button custom-select listItem ">
+            <select name="">
+                <option value="">测试一</option>
+                <option value="">测试二</option>
+                <option value="">测试三</option>
+            </select>
+        </div>
+        <h2 class="itemTitle">请填写接收人手机号码：</h2>
+        <div class="listItem ">
+            <input class="input" type="text" placeholder="请输入手机号码">
+        </div>
+        <div class="selBox" id="selBox">
+            <h3>选择赠送流量：</h3>
+            <a href="javascript:;">100M</a>
+            <a href="javascript:;">300M</a>
+            <a href="javascript:;">500M</a>
+            <a href="javascript:;">1G</a>
+        </div>
+        <div class="itemFlex">
+            <div class="ifOne"><input class="input" type="text" placeholder="请输入验证码"></div>
+            <div class="ifTwo"><a class="Btn greenBtn" href="javascript:;">获取验证码</a></div>
+        </div>
+        <a href="javascript:;" class="defaultBtn">分享</a>
+        <br><br><br>
+    </div>
+</div>
+<script>
+    let selBox = document.getElementById('selBox');
+    selBox.addEventListener('click', function (e) {
+        let input = e.target;
+        if (input.tagName !== 'A') return false;
+        selBox.querySelectorAll('a').forEach(function (el) {
+            if (el === input) {
+                if (input.className === '') {
+                    input.className = 'active';
+                } else {
+                    input.className = '';
+                }
+            } else {
+                el.className = ''
+            }
+
+        })
+
+
+    })
+</script>
+</body>
+</html>

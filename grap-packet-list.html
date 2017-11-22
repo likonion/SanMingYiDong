@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>抢流量红包</title>
+    <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/select.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <script>
+        (function() {
+            var newRem = function() {
+                var html = document.documentElement;
+                html.style.fontSize = html.getBoundingClientRect().width / 10 + 'px';
+            };
+            window.addEventListener('resize', newRem, false);
+            newRem();
+        })();
+    </script>
+</head>
+<body>
+<div id="popupWindow1" class="popupWindow" style="display: none;">
+    <div class="popupMain">
+        <div class="title">提示</div>
+        <div class="popupTxt">恭喜您！您此次抢到300M流量红包！</div>
+        <div class="popupBtn">
+            <a class="Btn greenBtn" href="javascript:;">确定</a>
+            <a class="Btn disableBtn" href="javascript:;">关闭</a>
+        </div>
+    </div>
+    <div class="mask"></div>
+</div>
+<div class="mainWarrp">
+    <div class="mainTop">
+    </div>
+    <div class="main">
+        <div id="grapPacketInfo">
+            <div class="residue">还剩 19 个红包</div>
+            <a id="grapBtn" href="javascript:;" class="defaultBtn" style="margin-top: 0;">点击抢红包</a>
+        </div>
+        <div class="itembox">
+            <div class="title">已领取红包</div>
+            <div class="ibmain">
+                <table width="100%" class="ibtable">
+                    <thead>
+                        <th>领取号码</th>
+                        <th>流量</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>13888888888</td>
+                            <td>100M</td>
+                        </tr>
+                        <tr>
+                            <td>13888888888</td>
+                            <td>100M</td>
+                        </tr>
+                        <tr>
+                            <td>13888888888</td>
+                            <td>100M</td>
+                        </tr>
+                        <tr>
+                            <td>13888888888</td>
+                            <td>100M</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+</div>
+<script>
+    // js closest
+    function closest(el, selector) {
+        var matchesSelector = el.matches || el.webkitMatchesSelector || el.mozMatchesSelector || el.msMatchesSelector;
+        while (el) {
+            if (matchesSelector.call(el, selector)) {
+                break;
+            }
+            el = el.parentElement;
+        }
+        return el;
+    }
+    let grapBtn = document.getElementById('grapBtn');
+    grapBtn.onclick = function () {// 打开弹窗
+        let popupWindow1 = document.getElementById('popupWindow1');
+        popupWindow1.style.display = 'flex'
+    };
+    let popupWindow = document.querySelector('.popupWindow');
+    popupWindow.addEventListener('click', function (e) {
+        let eTarget = e.target;
+        if (eTarget.classList.toString().indexOf('disableBtn') !== -1) {
+            closePopupWindow(eTarget)
+        }
+        if (eTarget.classList.toString().indexOf('greenBtn') !== -1) { // 演示领取过界面-点击弹窗的确定按钮触发
+            let grapPacketInfo = document.getElementById('grapPacketInfo');
+            closePopupWindow(eTarget)
+            grapPacketInfo.className = 'gpiDisable';
+            grapPacketInfo.querySelector('#grapBtn').innerHTML='您已领取过红包'
+        }
+        if (eTarget.classList.toString().indexOf('mask') !== -1) {
+            closePopupWindow(eTarget)
+        }
+    });
+    function closePopupWindow(eTarget) { // 关闭弹窗
+        closest(eTarget, '.popupWindow').style.display = 'none';
+    }
+
+</script>
+</body>
+</html>
