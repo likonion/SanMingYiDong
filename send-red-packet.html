@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>抢流量红包</title>
-    <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+    <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -18,42 +19,53 @@
             window.addEventListener('resize', newRem, false);
             newRem();
         })();
-
     </script>
 </head>
+
 <body>
-<div class="mainWarrp">
-    <div class="mainTop">
+    <div class="mainWarrp">
+        <div class="mainTop">
+        </div>
+        <div class="main">
+            <h2 class="itemTitle">批次：</h2>
+            <div class="button custom-select listItem ">
+                <select name="">
+                    <option value="">测试一</option>
+                    <option value="">测试二</option>
+                    <option value="">测试三</option>
+                </select>
+            </div>
+            <h2 class="itemTitle">发送流量以及个数：</h2>
+            <div class="itemFlex2 ">
+                <div class="inputTitle">100M</div>
+                <div class="inputTxt">
+                    <input class="input" type="number" placeholder="请输入个数">
+                </div>
+            </div>
+            <div class="itemFlex2 ">
+                <div class="inputTitle">300M</div>
+                <div class="inputTxt">
+                    <input class="input" type="number" placeholder="请输入个数">
+                </div>
+            </div>
+            <div class="itemFlex2 ">
+                <div class="inputTitle">500M</div>
+                <div class="inputTxt">
+                    <input class="input" type="number" placeholder="请输入个数">
+                </div>
+            </div>
+            <div class="itemFlex2 ">
+                <div class="inputTitle">1G</div>
+                <div class="inputTxt">
+                    <input class="input" type="number" placeholder="请输入个数">
+                </div>
+            </div>
+            <a href="javascript:;" class="defaultBtn">发送</a>
+            <br>
+            <br>
+            <br>
+        </div>
     </div>
-    <div class="main">
-        <h2 class="itemTitle">批次：</h2>
-        <div class="button custom-select listItem ">
-            <select name="">
-                <option value="">测试一</option>
-                <option value="">测试二</option>
-                <option value="">测试三</option>
-            </select>
-        </div>
-        <h2 class="itemTitle">发送流量以及个数：</h2>
-        <div class="itemFlex2 ">
-            <div class="inputTitle">100M</div>
-            <div class="inputTxt"><input class="input" type="number" placeholder="请输入个数"></div>
-        </div>
-        <div class="itemFlex2 ">
-            <div class="inputTitle">300M</div>
-            <div class="inputTxt"><input class="input" type="number" placeholder="请输入个数"></div>
-        </div>
-        <div class="itemFlex2 ">
-            <div class="inputTitle">500M</div>
-            <div class="inputTxt"><input class="input" type="number" placeholder="请输入个数"></div>
-        </div>
-        <div class="itemFlex2 ">
-            <div class="inputTitle">1G</div>
-            <div class="inputTxt"><input class="input" type="number" placeholder="请输入个数"></div>
-        </div>
-        <a href="javascript:;" class="defaultBtn">发送</a>
-        <br><br><br>
-    </div>
-</div>
 </body>
+
 </html>
