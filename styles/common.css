@@ -5,9 +5,6 @@ body {
     background-color: #a3120f;
 }
 
-.mainWarrp {
-
-}
 
 .mainTop {
     margin: 0 auto;
@@ -138,9 +135,6 @@ body {
     display: flex;
 }
 
-.itemFlex > div {
-
-}
 
 .itemFlex > div input {
     width: 100%;
